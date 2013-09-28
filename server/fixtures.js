@@ -342,6 +342,110 @@ if(Conferences.find().count() ==0)
 		details: "Agile Teams Roles and Responsibilities Starting towards using an agile process more often than not implies change. We discussed process changes, methodology changes, tools and best practices. What about the team? What are the differences between working with a classic software development team and an agile one? Are the roles we know like PM, Analyst, Architect, Developer, etc the same? Join me for a session where we will define each role and responsibility in an agile team and compare it to a classic one and discuss together how to organize it and achieve the best results. Don't miss this opportunity, bring your team to the session so we can have real life feedback!",
 		category: categories[4]
 	});
+	Sessions.insert({
+		conferenceId: conference,
+		assigned: false,
+		title: "Automated Website Deployment Methods",
+		speaker: speaker_names[1],
+		details: "In this fast paced web world, automation is king. With automated deployments you can reduce the turn-around time for new website features. Some sites deploy production changes over 50 times a day, all with automated deployments. In this session, learn about a variety of options for website deployments including Git and GitHub, TFS and visualstudio.com, even DropBox. With automated deployments you are free to focus on implementing features and not clicking buttons.",
+		category: categories[1]
+	});
+	Sessions.insert({
+		conferenceId: conference,
+		assigned: false,
+		title: "Autoscaling Applications In The Cloud",
+		speaker: speaker_names[2],
+		details: "In this session you will learn how to take your web applications to the next level with autoscaling. Hosting an application in the cloud not only eliminates the headaches of web servers and uptime, it can also provide unique features to dynamically scale your application based on performance. This scaling capability helps to keep your application lean without compromising performance when the load spikes or continues to grow.",
+		category: categories[2]
+	});
+	Sessions.insert({
+		conferenceId: conference,
+		assigned: false,
+		title: "Breaking Down the Communication Barrier with Domain Driven Design",
+		speaker: speaker_names[3],
+		details: "Software developers have to be able to change business conversations into viable applications. In the process code is written and the ideas formed in the conversations are translated into the codebase. As the application progresses those business ideas (or business specifications) are placed throughout the codebase as developers work to create their final product. During this process what is lost is the cohesive business conversation that originally took place. In its place are a bunch of fragments representing single ideas from those conversations. Those ideas are so fragmented that they cannot be used to reconstruct the original conversation. Its common to hear developers say \"the business doesn't know how it does business\". But after having all of these conversations to help solve that problem those same developers are not making use of the application\'s codebase as a tool to clearly and centrally answer the question of what does the business really do. In this session we will discuss the fundamental principles of Domain Driven Design and explore how it can help to provide well encapsulated code, clear documentation of what the business does and a common ligua franca for communication with the business whenever the need arises.",
+		category: categories[3]
+	});
+	Sessions.insert({
+		conferenceId: conference,
+		assigned: false,
+		title: "Building Cross-Platform Phone Apps & Sites with jQuery Mobile",
+		speaker: speaker_names[4],
+		details: "Native mobile apps have taken all the spotlight in recent years thanks to the introduction of hundreds of thousands of apps in various app stores from Apple, Google, Microsoft and BlackBerry. Apps offer a great native platform experience, but they can be expensive to build and require specific languages, SDKs and skill sets across multiple platforms. Mobile web sites offer a great way to engage with consumers and corporate workers alike without requiring the installation of any app. This session explores the benefits of web development for smartphones using the most popular HTML5 & JavaScript framework for mobile: jQuery Mobile (JQM). We’ll go over a quick primer on HTML5, CSS and JavaScript, followed by everything you need to get started with JQM. We’ll cover the most common development environment options, how to build your first jQuery Mobile page, and how to debug your mobile web code with some of the available tools. We’ll also discuss how to develop a native-like experience on each mobile platform thanks to JQM’s adaptive rendering, and how you wrap a JQM project as a deployable application using PhoneGap. Web development is a critical skill required by every mobile developer; come learn how to get started and reach hundreds of millions of users through a smart mobile web approach.",
+		category: categories[4]
+	});
+	Sessions.insert({
+		conferenceId: conference,
+		assigned: false,
+		title: "Cross Platform Mobile Development in C# with Xamarin",
+		speaker: speaker_names[4],
+		details: "Come learn how to create native cross-platform mobile applications in C# using Xamarin.Android and Xamarin.iOS. Xamarin's platform allows for significant code sharing amongst the three major mobile platforms. In this session we're going to take a quick look at Xamarin Mobile Platform and then dig into some cross platform mobile applications to see how code can be shared between iOS and Android. We'll also touch on some architectural tips and design considerations to create mobile applications.",
+		category: categories[4]
+	});
+	Sessions.insert({
+		conferenceId: conference,
+		assigned: false,
+		title: "DIY Action Figures!",
+		speaker: speaker_names[1],
+		details: "It's 3D making time. Learn how to sculpt a 3D action figure on your laptop using 3D sculpting and CAD tools, prep and slice your model for printing, and use a 3D printer to print out all the parts.",
+		category: categories[1]
+	});
+	Sessions.insert({
+		conferenceId: conference,
+		assigned: false,
+		title: "Frontend Workflows with Grunt",
+		speaker: speaker_names[3],
+		details: "Developers have been crafting task-oriented workflows on the server-side for many years; until recently, there was no solution targeted towards front-end workflows. In this session you will learn about Grunt: The JavaScript Task Runner, as we walk through building a web development workflow from the ground up.",
+		category: categories[3]
+	});
+	Sessions.insert({
+		conferenceId: conference,
+		assigned: false,
+		title: "Getting Started with Android Development",
+		speaker: speaker_names[2],
+		details: "In this hands-on lab we will be building an android application from the ground-up. This will be great introduction to android development.",
+		category: categories[2]
+	});
+	Sessions.insert({
+		conferenceId: conference,
+		assigned: false,
+		title: "How to SOLIDify your code with Unit Tests and Mocking",
+		speaker: speaker_names[4],
+		details: "In this session we will explore the advantages of mocking with libraries like RhinoMocks in order to deliver SOLID code. Sample application be analyzed and unit test will be created to ensure maximum code coverage. Where required, code will be modified to make it more testable, mockable and in-line with SOLID programming principles.",
+		category: categories[4]
+	});
+	Sessions.insert({
+		conferenceId: conference,
+		assigned: false,
+		title: "",
+		speaker: speaker_names[3],
+		details: "",
+		category: categories[3]
+	});
+	Sessions.insert({
+		conferenceId: conference,
+		assigned: false,
+		title: "",
+		speaker: speaker_names[1],
+		details: "",
+		category: categories[1]
+	});
+	Sessions.insert({
+		conferenceId: conference,
+		assigned: false,
+		title: "HTML5: The Parts You Care About",
+		speaker: speaker_names[4],
+		details: "HTML5 is here to stay, but how to you keep know what information is important and what is nothing more than the buzz. The goal of this presentation is to give you the knowledge and tools to you need to understand how HTML5 can be applied to your software development world. We will discuss and view the current state of HTML5, review some of the common assumptions going on about HTML5, and how to start getting you and your developers off to a good start with HTML5.",
+		category: categories[2]
+	});
+	Sessions.insert({
+		conferenceId: conference,
+		assigned: false,
+		title: "Introduction to Node.js on Windows Azure",
+		speaker: speaker_names[2],
+		details: "Node.js is a platform for building fast and scalable applications in JavaScript. In this session you will learn how to build Node.js application and deploy them to Windows Azure. You will learn how to create and manage your applications from the Windows Azure Portal and the cross-platform Windows Azure CLI. You will learn how to configure and debug your Node.js application and how to connect it to services such as Windows Azure Storage and MongoDB.",
+		category: categories[4]
+	});
 
 	Categories.insert({ 
 		conferenceId: conference,
