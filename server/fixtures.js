@@ -302,7 +302,7 @@ if(Conferences.find().count() ==0)
 		img: 'http://prairiedevcon.com/Content/saskatoon/images/speakers/amirbarylko.jpg'
 	});
 	
-	var speakerId1 = Categories.insert({ 
+	var categoryId1 = Categories.insert({ 
 		conferenceId: conference,
 		name: categories[0]
 	});
@@ -329,7 +329,7 @@ if(Conferences.find().count() ==0)
 		title: '"All Your Signals R Belong to Us" or "How to be Awesome at Real Time Web"',
 		speaker: speakerId1,
 		details: "Trying to make an app \"stick\" is tough enough, and keeping users aware of changes to their data or data affects them can be hard - even harder if you want to support different clients. Come check out SignalR, the open-source solution to presence and server-sourced data push. Fully supported through development tooling with templates available for every major mobile platform and OS, SignalR takes long polling and makes it sexy.",
-		category: categoryId[0]
+		category: categoryId1
 	});
 	Sessions.insert({
 		conferenceId: conference,
