@@ -15,7 +15,7 @@ Template.assignTime.helpers({
 			});
 		sessions.forEach(function(session)
 		{
-			options = options + '<option id="' + session._id + '">' + session.name + '</option>'
+			options = options + '<option id="' + session._id + '">' + session.title + '</option>'
 		});
 		return options;
 	},
@@ -28,7 +28,7 @@ Template.assignTime.events({
 		var user = Meteor.user();
 		if(user)
 		{
-			var sessionId = $(ev.target).find('[id=speaker]').find(":selected").attr('id');
+			var sessionId = $(ev.target).find('[id=session]').find(":selected").attr('id');
 			var timeId = Session.get('timeId');
 			Meteor.call('assignTime', timeId, sessionId, function(error, id)
 				{

@@ -262,7 +262,7 @@ if(Conferences.find().count() ==0)
 	});
 	Speakers.insert({
 		conferenceId: conference,
-		name: speaker_names[1]',
+		name: speaker_names[1],
 		location: 'Saskatoon, SK',
 		blog: 'http://elementnova.com/',
 		website: '',
