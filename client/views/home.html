@@ -1,7 +1,20 @@
 <template name="home">
+
+
+	<div class="col-lg-offset-2 col-lg-6">
+		<h1>Welcome to Plan.conf</h1>
+		<p>
+			Login with github, twitter or facebook to begin planning your conference today!!
+		</p>
+
+		<p>DEBUG<br />
+
+
 	{{#each conferences}}
 		<p>
 			<a href="{{viewConferencePath _id}}">{{name}}</a>
 		</p>
 	{{/each}}
+	</p>
+	</div>
 </template>

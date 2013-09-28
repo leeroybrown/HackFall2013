@@ -14,9 +14,9 @@ Meteor.methods({
 		{
 			var newConference = _.extend(_.pick(
 				attributes, 
-				'name'),
+				'name',
+				'owner'),
 			{
-				owner: null
 			});
 
 			var conferenceId = Conferences.insert(newConference);

@@ -38,7 +38,7 @@ Template.assignTime.events({
 					}
 					else
 					{
-						Meteor.Router.to('viewConference', id);
+						Meteor.Router.to('viewConference', Session.get('conferenceId'));
 					}
 				});
 		}

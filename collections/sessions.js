@@ -16,10 +16,11 @@ Meteor.methods({
 				'category',
 				'speaker'),
 				{
+					assigned: false
 				});
 
-			var conferenceId = Sessions.insert(newSession);
-			return conferenceId;
+			Sessions.insert(newSession);
+			return conference._id;
 
 		}
 		else

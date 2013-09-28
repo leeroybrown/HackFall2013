@@ -1,3 +1,10 @@
+Template.addSpeaker.helpers({
+	speakers: function()
+	{
+		return Speakers.find({conferenceId: Session.get('conferenceId')});
+	}
+})
+
 Template.addSpeaker.events({
 	'submit form': function(ev)
 	{

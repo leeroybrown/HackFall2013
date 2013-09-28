@@ -29,8 +29,6 @@ Meteor.methods({
 	},
 	assignTime: function(timeId, sessionId)
 	{
-		console.log(timeId);
-		console.log(sessionId);
 		var time = Times.update(Times.findOne(
 			{
 				_id: timeId
@@ -41,5 +39,19 @@ Meteor.methods({
 		Sessions.update(Sessions.findOne({_id: sessionId}), {$set: {assigned: true}});
 		return;
 
+	},
+	removeTime: function(timeId, sessionId)
+	{
+		console.log(timeId);
+		console.log(sessionId);
+		var time = Times.update(Times.findOne(
+			{
+				_id: timeId
+			}), 
+			{$set: {session: null}}
+		);
+
+		Sessions.update(Sessions.findOne({_id: sessionId}), {$set: {assigned: false}});
+		return;
 	}
 });

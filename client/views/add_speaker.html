@@ -3,7 +3,7 @@
 	  <div class="form-group">
 	    <label for="name" class="col-lg-2 control-label">Name</label>
 	    <div class="col-lg-6">
-	      <input type="text" class="form-control" id="name" placeholder="Session Title">
+	      <input type="text" class="form-control" id="name" placeholder="Speaker's Full Name">
 	    </div>
 	  </div>
 
@@ -49,4 +49,19 @@
 	  </div>
 	</form>
 
+	 <div class="col-lg-offset-2 col-lg-6">
+		<h1>Speakers</h1>
+		{{#each speakers}}
+			<h4>{{name}}</h4>
+			<small>{{location}}</small>
+			<a href="{{blog}}">Blog</a> 
+			<a href="{{website}}">Website</a> 
+			<a href="http://twitter.com/{{twitter}}">Twitter</a> 
+			<p>
+			{{details}}
+			</p>
+			<br />
+			<br />
+		{{/each}}
+	</div>
 </template>

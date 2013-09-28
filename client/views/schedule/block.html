@@ -1,8 +1,13 @@
 <template name="block">
 	<div class="col-md-4 block" id="{{_id}}">
 		{{#if session}}
-		sdaf
-			{{name}}
+			{{#with block session}}
+				<h2>{{title}}</h2>
+				<p>{{getSpeaker speaker}}</p>
+				<br />
+				<br />
+				<a href="#" id="{{_id}}" class="unassign">Unassign block</a>
+			{{/with}}
 		{{else}}
 			<a href="#" class="assign" id="{{_id}}">Assign Session</a>
 		{{/if}}

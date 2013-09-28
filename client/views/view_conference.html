@@ -1,3 +1,20 @@
 <template name="viewConference">
-	{{> grid}}
+<ul class="nav nav-tabs" id="myTab">
+  <li class="active"><a href="#home">Home</a></li>
+  <li><a href="#time">Add Time Blocks</a></li>
+  <li><a href="#speaker">Speakers</a></li>
+  <li><a href="#category">Categories</a></li>
+  <li><a href="#session">Sessions</a></li>
+</ul>
+
+<div class="tab-content">
+  <div class="tab-pane active" id="home">{{> grid}}</div>
+  <div class="tab-pane" id="time">{{> addTime}}</div>
+  <div class="tab-pane" id="speaker">{{> addSpeaker}}</div>
+  <div class="tab-pane" id="category">{{> addCategory}}</div>
+  <div class="tab-pane" id="session">{{> addSession}}</div>
+</div>
+
+
+	
 </template>
