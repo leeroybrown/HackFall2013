@@ -18,8 +18,9 @@ Meteor.Router.add({
 	'/:_id':
 	{
 		as: 'viewConference',
-		to: function()
+		to: function(id)
 		{
+			Session.set('conferenceId', id);
 			return 'viewConference';
 		}
 	},

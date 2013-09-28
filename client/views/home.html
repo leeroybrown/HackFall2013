@@ -1,5 +1,7 @@
 <template name="home">
-
-	
-
+	{{#each conferences}}
+		<p>
+			<a href="{{viewConferencePath _id}}">{{name}}</a>
+		</p>
+	{{/each}}
 </template>

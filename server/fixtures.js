@@ -1,9 +1,106 @@
+if(Conferences.find().count() ==0)
+{
+	var conference = Conferences.insert(
+	{
+		owner: null,
+		name: 'Prairie Dev Con',
+	});
+
+	Times.insert({
+		conference: conference,
+		date: '11/04/2013',
+		time: '8',
+		session: null
+	});
+}
+
+/*
 if(Conferences.find().count() == 0 )
 {
 	Conferences.insert(
 	{
 		owner: null,
 		name: 'Prairie Dev Con',
+		times: [
+			{	
+				_id: new Meteor.Collection.ObjectID()._str,
+				date: '11/04/2013',
+				time: '8',
+				session: null
+			},
+			{	
+				_id: new Meteor.Collection.ObjectID()._str,
+				date: '11/04/2013',
+				time: '8',
+				session: null
+			},
+			{	
+				_id: new Meteor.Collection.ObjectID()._str,
+				date: '11/04/2013',
+				time: '8',
+				session: null
+			},
+			{	
+				_id: new Meteor.Collection.ObjectID()._str,
+				date: '11/04/2013',
+				time: '8',
+				session: null
+			},
+			{	
+				_id: new Meteor.Collection.ObjectID()._str,
+				date: '11/04/2013',
+				time: '9',
+				session: null
+			},
+			{	
+				_id: new Meteor.Collection.ObjectID()._str,
+				date: '11/04/2013',
+				time: '9',
+				session: null
+			},
+			{	
+				_id: new Meteor.Collection.ObjectID()._str,
+				date: '11/04/2013',
+				time: '9',
+				session: null
+			},
+			{	
+				_id: new Meteor.Collection.ObjectID()._str,
+				date: '11/04/2013',
+				time: '9',
+				session: null
+			},
+			{	
+				_id: new Meteor.Collection.ObjectID()._str,
+				date: '11/04/2013',
+				time: '10',
+				session: null
+			},
+			{	
+				_id: new Meteor.Collection.ObjectID()._str,
+				date: '11/04/2013',
+				time: '10',
+				session: null
+			},
+			{	
+				_id: new Meteor.Collection.ObjectID()._str,
+				date: '11/04/2013',
+				time: '10',
+				session: null
+			},
+			{	
+				_id: new Meteor.Collection.ObjectID()._str,
+				date: '11/04/2013',
+				time: '10',
+				session: null
+			},
+			{	
+				_id: new Meteor.Collection.ObjectID()._str,
+				date: '11/04/2013',
+				time: '11',
+				session: null
+			},
+		],
 		categories: [
 			{ 
 				_id: new Meteor.Collection.ObjectID()._str,
@@ -125,3 +222,4 @@ if(Conferences.find().count() == 0 )
 		]
 	});
 }
+*/
