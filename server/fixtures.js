@@ -42,7 +42,7 @@ if(Conferences.find().count() == 0 )
 				blog: 'http://jameschambers.com/blog',
 				website: 'http://jameschambers.com/',
 				twitter: '@CanadianJames',
-				details: 'James Chambers is an entertaining and fast-moving speaker that keeps you on your toes with content coming a mile a minute (or faster). He pulls no punches with the technology he talks about, and knows it inside-out because he uses it every day. Employed at LogiSense Corp as the Product and Community Development Manager, James is also a Microsoft MVP in Asp.Net/IIS and speaks at conferences, workshops, UG events and brown-bag lunches across Canada where he tries to get the audience laughing with him more than at him. Beyond his technology interests (which span from web to cloud to mobile) he is also active in the community raising funds to alleviate poverty, provide clean drinking water and to help find a cure for Juvenile Diabetes.'
+				details: 'James Chambers is an entertaining and fast-moving speaker that keeps you on your toes with content coming a mile a minute (or faster). He pulls no punches with the technology he talks about, and knows it inside-out because he uses it every day. Employed at LogiSense Corp as the Product and Community Development Manager, James is also a Microsoft MVP in Asp.Net/IIS and speaks at conferences, workshops, UG events and brown-bag lunches across Canada where he tries to get the audience laughing with him more than at him. Beyond his technology interests (which span from web to cloud to mobile) he is also active in the community raising funds to alleviate poverty, provide clean drinking water and to help find a cure for Juvenile Diabetes.',
 				img: 'http://prairiedevcon.com/Content/saskatoon/images/speakers/jameschambers.jpg'
 			},
 			{
@@ -52,7 +52,7 @@ if(Conferences.find().count() == 0 )
 				blog: 'http://elementnova.com/',
 				website: '',
 				twitter: '@myHeroDevon',
-				details: 'A husband of one and father of three, Devon has been building websites professionally since 2005. When not working at zu or playing with his children, Devon is often found in the halls of social media consuming all the web development knowledge his tiny tiny brain can handle.'
+				details: 'A husband of one and father of three, Devon has been building websites professionally since 2005. When not working at zu or playing with his children, Devon is often found in the halls of social media consuming all the web development knowledge his tiny tiny brain can handle.',
 				img: 'http://prairiedevcon.com/Content/saskatoon/images/speakers/nopic.jpg'
 			},
 			{
@@ -62,7 +62,7 @@ if(Conferences.find().count() == 0 )
 				blog: 'http://http//blog.simontimms.com',
 				website: '',
 				twitter: '@stimms',
-				details: 'Simon is an independent contractor in Calgary where he mostly does boring work for oil companies. In his spare time he helps run the Calgary .net user group. He is interested in distributed systems, JavaScript, data visualization and development best practices. He’s excited to be in one of the top 5 cities in Saskatchewan for his 6thPrarie DevCon.'
+				details: 'Simon is an independent contractor in Calgary where he mostly does boring work for oil companies. In his spare time he helps run the Calgary .net user group. He is interested in distributed systems, JavaScript, data visualization and development best practices. He’s excited to be in one of the top 5 cities in Saskatchewan for his 6thPrarie DevCon.',
 				img: 'http://prairiedevcon.com/Content/saskatoon/images/speakers/simontimms.jpg'
 			},
 			{
@@ -72,7 +72,7 @@ if(Conferences.find().count() == 0 )
 				blog: 'http://www.edenrohatensky.com/',
 				website: 'http://www.edenrohatensky.com/',
 				twitter: '@edenthecat',
-				details: 'Eden Rohatensky is a web developer, an interface designer, and a cat lover. She\'s passionate about making great user experiences and building cool things - and is currently doing both at GasBuddy. She is the chapter lead for Girl Geek Dinners in Regina, as well as an organizer of various community events in Saskatchewan.'
+				details: 'Eden Rohatensky is a web developer, an interface designer, and a cat lover. She\'s passionate about making great user experiences and building cool things - and is currently doing both at GasBuddy. She is the chapter lead for Girl Geek Dinners in Regina, as well as an organizer of various community events in Saskatchewan.',
 				img: 'http://prairiedevcon.com/Content/saskatoon/images/speakers/edenrohatensky.jpg'
 			},
 			{
@@ -82,14 +82,14 @@ if(Conferences.find().count() == 0 )
 				blog: 'http://www.orthocoders.com/',
 				website: 'http://www.maventhought.com/',
 				twitter: '@abarylko',
-				details: 'Amir Barylko started his career in 1994 working for IBM as a senior developer while he was finishing his Masters degree in computer science. Since then he worked as team leader and architect for the past 15 years. Having started with languages like C++ and Java he spent many years coding in C# and training other developers in topics such domain modeling, abstractions, patterns, automation, dependency injection, testing, etc. Being an incurable geek, always thirsty for knowledge, his passion for technology moved him towards Ruby on Rails a few years ago, becoming an advocate of RoR web development. Also following he\'s teaching passion he\'s being hosting a yearly TDD, BDD, Agile and RoR training for the past three years with great reviews in Winnipeg and across Canada. Amir is a rare combination of high technical skills, lots of experience in a wide range of platforms, exceptional presentation skills and great sense of humor. His presentations are always rich in content and fun to attend.'
+				details: 'Amir Barylko started his career in 1994 working for IBM as a senior developer while he was finishing his Masters degree in computer science. Since then he worked as team leader and architect for the past 15 years. Having started with languages like C++ and Java he spent many years coding in C# and training other developers in topics such domain modeling, abstractions, patterns, automation, dependency injection, testing, etc. Being an incurable geek, always thirsty for knowledge, his passion for technology moved him towards Ruby on Rails a few years ago, becoming an advocate of RoR web development. Also following he\'s teaching passion he\'s being hosting a yearly TDD, BDD, Agile and RoR training for the past three years with great reviews in Winnipeg and across Canada. Amir is a rare combination of high technical skills, lots of experience in a wide range of platforms, exceptional presentation skills and great sense of humor. His presentations are always rich in content and fun to attend.',
 				img: 'http://prairiedevcon.com/Content/saskatoon/images/speakers/amirbarylko.jpg'
 			}
 		],
 		sessions: [
 			{
 				_id: new Meteor.Collection.ObjectID()._str,
-				title: "All Your Signals R Belong to Us" or "How to be Awesome at Real Time Web",
+				title: '"All Your Signals R Belong to Us" or "How to be Awesome at Real Time Web"',
 				speaker: 0,
 				details: "Trying to make an app \"stick\" is tough enough, and keeping users aware of changes to their data or data affects them can be hard - even harder if you want to support different clients. Come check out SignalR, the open-source solution to presence and server-sourced data push. Fully supported through development tooling with templates available for every major mobile platform and OS, SignalR takes long polling and makes it sexy.",
 				category: 0
