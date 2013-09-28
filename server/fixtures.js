@@ -12,6 +12,17 @@ if(Conferences.find().count() ==0)
 		time: '8',
 		session: null
 	});
+
+	Speakers.insert({
+		conference: conference,
+		name: 'James Chambers',
+		location: 'Brandon, MB',
+		blog: 'http://jameschambers.com/blog',
+		website: 'http://jameschambers.com/',
+		twitter: '@CanadianJames',
+		details: 'James Chambers is an entertaining and fast-moving speaker that keeps you on your toes with content coming a mile a minute (or faster). He pulls no punches with the technology he talks about, and knows it inside-out because he uses it every day. Employed at LogiSense Corp as the Product and Community Development Manager, James is also a Microsoft MVP in Asp.Net/IIS and speaks at conferences, workshops, UG events and brown-bag lunches across Canada where he tries to get the audience laughing with him more than at him. Beyond his technology interests (which span from web to cloud to mobile) he is also active in the community raising funds to alleviate poverty, provide clean drinking water and to help find a cure for Juvenile Diabetes.',
+		img: 'http://prairiedevcon.com/Content/saskatoon/images/speakers/jameschambers.jpg'
+	});
 }
 
 /*
