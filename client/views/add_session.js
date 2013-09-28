@@ -14,8 +14,8 @@ Template.addSession.events({
 				title: $(ev.target).find('[id=title]').val(),
 				details: $(ev.target).find('[id=details]').val(),
 				category: $(ev.target).find('[id=category]').val(),
-				category: $(ev.target).find('[id=speaker]').val()
-				
+				speaker: $(ev.target).find('[id=speaker]').val(),
+				conferenceId: Session.get('conferenceId')
 			}
 
 			Meteor.call('addSessionToConference', newSession, function(error, id)

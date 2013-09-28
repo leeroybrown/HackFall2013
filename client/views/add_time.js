@@ -13,7 +13,7 @@ Template.addTime.events({
 				date: $(ev.target).find('[id=date]').val(),
 				time: $(ev.target).find('[id=time]').val().substring(0,1),
 				quantity: $(ev.target).find('[id=quantity]').val(),
-
+				conferenceId: Session.get('conferenceId')
 			}
 			Meteor.call('addTimeToConference', newTime, function(error, id)
 			{

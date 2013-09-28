@@ -12,7 +12,7 @@ Template.addCategory.events({
 		{
 			var newCategory = {
 				name: $(ev.target).find('[id=name]').val(),
-				
+				conferenceId: Session.get('conferenceId')
 			}
 
 			Meteor.call('addCategoryToConference', newCategory, function(error, id)
@@ -23,7 +23,7 @@ Template.addCategory.events({
 				}
 				else
 				{
-					Meteor.Router.to('viewCategory', id);
+					Meteor.Router.to('viewConference', id);
 				}
 			});
 		}

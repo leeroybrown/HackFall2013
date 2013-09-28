@@ -4,23 +4,18 @@ Meteor.methods({
 	addCategoryToConference: function(attributes)
 	{
 		var conference = Conferences.findOne({_id: attributes.conferenceId});
-
+		console.log(conference);
 		if(conference)
 		{
-			for(var i = 0; i < attributes.quantity; i++)
-			{
-				var newCategory = _.extend(_.pick(
+			var newCategory = _.extend(_.pick(
 				attributes, 
-				'conference',
+				'conferenceId',
 				'name'),
 				{
 				});
 
 				var conferenceId = Categories.insert(newCategory);
-				return conferenceId;
-			}
 
-			
 			return conference._id;
 		}
 		else

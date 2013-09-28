@@ -7,11 +7,10 @@ Meteor.methods({
 
 		if(conference)
 		{
-			for(var i = 0; i < attributes.quantity; i++)
-			{
-				var newSession = _.extend(_.pick(
+
+			var newSession = _.extend(_.pick(
 				attributes, 
-				'conference',
+				'conferenceId',
 				'title',
 				'details',
 				'category',
@@ -19,12 +18,9 @@ Meteor.methods({
 				{
 				});
 
-				var conferenceId = Sessions.insert(newSession);
-				return conferenceId;
-			}
+			var conferenceId = Sessions.insert(newSession);
+			return conferenceId;
 
-			
-			return conference._id;
 		}
 		else
 		{

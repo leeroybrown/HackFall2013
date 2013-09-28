@@ -17,6 +17,7 @@ Template.addSpeaker.events({
 				website: $(ev.target).find('[id=website]').val(),
 				twitter: $(ev.target).find('[id=twitter]').val(),
 				details: $(ev.target).find('[id=details]').val(),
+				conferenceId: Session.get('conferenceId')
 			}
 
 			Meteor.call('addSpeakerToConference', newSpeaker, function(error, id)

@@ -11,18 +11,15 @@ Meteor.methods({
 			{
 				var newTime = _.extend(_.pick(
 				attributes, 
-				'conference',
+				'conferenceId',
 				'date',
 				'time'),
 				{
 					session: null
 				});
 
-				var conferenceId = Times.insert(newTime);
-				return conferenceId;
+				Times.insert(newTime);
 			}
-
-			
 			return conference._id;
 		}
 		else
