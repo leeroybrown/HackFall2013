@@ -301,6 +301,7 @@ if(Conferences.find().count() ==0)
 			
 	Sessions.insert({
 		conferenceId: conference,
+		assigned: false,
 		title: '"All Your Signals R Belong to Us" or "How to be Awesome at Real Time Web"',
 		speaker: 0,
 		details: "Trying to make an app \"stick\" is tough enough, and keeping users aware of changes to their data or data affects them can be hard - even harder if you want to support different clients. Come check out SignalR, the open-source solution to presence and server-sourced data push. Fully supported through development tooling with templates available for every major mobile platform and OS, SignalR takes long polling and makes it sexy.",
@@ -308,6 +309,7 @@ if(Conferences.find().count() ==0)
 	});
 	Sessions.insert({
 		conferenceId: conference,
+		assigned: false,
 		title: "Web Performance & You\" or \"20 Megabyte Websites sounds like a Bad Idea",
 		speaker: 0,
 		details: "In the past year the average size of a webpage has increased by 20%. With this increase sees a massive decrease in performance. The size of a site alone does not indicate how well it performs. In this presentation you will learn about techniques for decreasing the overall page load of your website and getting it into the eyes of your audience blazingly fast.",
@@ -315,6 +317,7 @@ if(Conferences.find().count() ==0)
 	});
 	Sessions.insert({
 		conferenceId: conference,
+		assigned: false,
 		title: "A Complete Beginner's Guide to Node.js",
 		speaker: 0,
 		details: "Have you been wondering what all this hype is about Node.js? In this beginners' session we'll look at what exactly Node.js is and how we can use it to build simple apps using JavaScript on your full stack.",
@@ -322,6 +325,7 @@ if(Conferences.find().count() ==0)
 	});
 	Sessions.insert({
 		conferenceId: conference,
+		assigned: false,
 		title: "A Primer on LESS and Sass",
 		speaker: 0,
 		details: "CSS Meta languages can save time and allow for cleaner and more readable style sheets. This session discusses the features of LESS and Sass, the differences between each language’s syntaxes, and the per-project benefits of said differences. The primer will also discuss methods of compiling these languages and creative uses for reducing time spent on creating style sheets.",
@@ -329,6 +333,7 @@ if(Conferences.find().count() ==0)
 	});
 	Sessions.insert({
 		conferenceId: conference,
+		assigned: false,
 		title: "Agile Teams Roles and Responsibilities",
 		speaker: 0,
 		details: "Agile Teams Roles and Responsibilities Starting towards using an agile process more often than not implies change. We discussed process changes, methodology changes, tools and best practices. What about the team? What are the differences between working with a classic software development team and an agile one? Are the roles we know like PM, Analyst, Architect, Developer, etc the same? Join me for a session where we will define each role and responsibility in an agile team and compare it to a classic one and discuss together how to organize it and achieve the best results. Don't miss this opportunity, bring your team to the session so we can have real life feedback!",
