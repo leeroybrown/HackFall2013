@@ -1,7 +1,12 @@
 Template.block.helpers({
-	block: function()
+	block: function(id)
 	{
-		//return Conferences.findOne({_id: Session.get('conferenceId')})
+		console.log(id);
+		return Sessions.findOne({_id: id});
+	},
+	getSpeaker: function(speaker)
+	{
+		return Speakers.findOne({_id: speaker}).name;
 	}
 });
 
@@ -11,5 +16,23 @@ Template.block.events({
 		ev.preventDefault();
 		console.log(ev.target.id);
 		Meteor.Router.to('assignTime', Session.get('conferenceId'), ev.target.id);
+	},
+	'click .unassign': function(ev)
+	{
+		ev.preventDefault();
+		console.log($(ev.target.id).parent().attr('id'));
+		console.log($(ev.target.id).parent());
+		/*Meteor.call('removeTime', ev.target.id, $(ev.target.id).parent().attr('id'), function(error, id)
+		{
+			if(error)
+			{
+				console.log(error);
+			}
+			else
+			{
+				console.log('removed');
+			}
+		});*/
+	
 	}
 });

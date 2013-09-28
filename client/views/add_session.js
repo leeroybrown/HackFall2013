@@ -18,6 +18,18 @@ Template.addSession.helpers({
 			options = options + '<option id="' + speak._id + '">' + speak.name + '</option>'
 		});
 		return options;
+	},
+	sessions: function()
+	{
+		return Sessions.find({conferenceId: Session.get('conferenceId')});
+	},
+	getCat: function(category)
+	{
+		return Categories.findOne({_id: category}).name;
+	},
+	getSpeaker: function(speaker)
+	{
+		return Speakers.findOne({_id: speaker}).name;
 	}
 });
 
@@ -45,7 +57,7 @@ Template.addSession.events({
 				}
 				else
 				{
-					Meteor.Router.to('viewSession', id);
+					Meteor.Router.to('viewConference', id);
 				}
 			});
 		}

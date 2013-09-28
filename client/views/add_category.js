@@ -1,5 +1,8 @@
 Template.addCategory.helpers({
-
+	categories: function()
+	{
+		return Categories.find({conferenceId: Session.get('conferenceId')});
+	}
 });
 
 Template.addCategory.events({
