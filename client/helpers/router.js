@@ -23,11 +23,23 @@ Meteor.Router.add({
 			return 'viewConference';
 		}
 	},
+	'/:_id/cat/':
+	{
+
+		as: 'category',
+		to: function(id)
+		{
+			console.log('asdf');
+			Session.set('conferenceId', id);
+			return 'addCategory';
+		}
+	},
 	'/:_id/session/':
 	{
 		as: 'addSession',
-		to: function()
+		to: function(id)
 		{
+			console.log('asdf');
 			Session.set('conferenceId', id);
 			return 'addSession';
 		}
@@ -43,7 +55,7 @@ Meteor.Router.add({
 		}
 
 	},
-	'/:_id/speaker/new':
+	'/:_id/speaker':
 	{
 		as: 'addSpeaker',
 		to: function(id)
@@ -64,13 +76,5 @@ Meteor.Router.add({
 		}
 
 	},
-	':_id/cat/':
-	{
-		as: 'category',
-		to: function(id)
-		{
-			Session.set('conferenceId', id);
-			return 'category';
-		}
-	}
+	
 });
