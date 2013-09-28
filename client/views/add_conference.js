@@ -13,9 +13,7 @@ Template.addConference.events({
 			var newConference = {
 				owner: user._id,
 				name: $(ev.target).find('[id=name]').val(),
-				categories: [],
-				speakers: [],
-				sessions: []
+				
 			}
 
 			Meteor.call('addConference', newConference, function(error, id)

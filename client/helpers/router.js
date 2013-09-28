@@ -55,6 +55,27 @@ Meteor.Router.add({
 		}
 
 	},
+	'/:_id/time/':
+	{
+		as: 'addTime',
+		to: function(id)
+		{
+			Session.set('conferenceId', id);
+			return 'addTime';
+		}
+
+	},
+	'/:_id/session/:sId':
+	{
+		as: 'viewSession',
+		to: function(id, sId)
+		{
+			Session.set('conferenceId', id);
+			Session.set('sessionId', sId);
+			return 'viewSession';
+		}
+
+	},
 	'/:_id/speaker':
 	{
 		as: 'addSpeaker',

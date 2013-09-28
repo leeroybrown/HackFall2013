@@ -1,0 +1,48 @@
+<template name="addTime">
+	<form class="form-horizontal" role="form">
+	  <div class="form-group">
+	    <label for="name" class="col-lg-2 control-label">Date</label>
+	    <div class="col-lg-6">
+	      <input type="text" class="form-control datepicker" id="date" placeholder="date">
+	    </div>
+	  </div>
+
+	  <div class="form-group">
+	    <label for="name" class="col-lg-2 control-label">Time</label>
+	    <div class="col-lg-6">
+	      	<select class="form-control" id="time" name="startHour">
+				<option>7 am</option>
+				<option>8 am</option>
+				<option>9 am</option>
+				<option>10 am</option>
+				<option>11 am</option>
+				<option>12 am</option>
+				<option>1 pm</option>
+				<option>2 pm</option>
+				<option>3 pm</option>
+				<option>4 pm</option>
+				<option>5 pm</option>
+				<option>6 pm</option>
+			</select>
+	    </div>
+	  </div>
+
+	  <div class="form-group">
+	    <label for="name" class="col-lg-2 control-label">Quantity</label>
+	    <div class="col-lg-6">
+	      <select id="quantity" class="form-control">
+	 			<option>1</option>
+	 			<option>2</option>
+	 			<option>3</option>
+	 			<option>4</option>
+	 		</select>
+	    </div>
+	  </div>
+	 
+	  <div class="form-group">
+	    <div class="col-lg-offset-2 col-lg-10">
+	      <button type="submit" class="btn btn-default">Create</button>
+	    </div>
+	  </div>
+	</form>
+</template>

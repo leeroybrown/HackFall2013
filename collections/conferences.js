@@ -59,27 +59,31 @@ Meteor.methods({
 			return 'asdf';
 		}
 	},
-	addTimeBlockToConference: function(attributes)
+	addTimeToConference: function(attributes)
 	{
 		var conference = Conferences.findOne({_id: attributes.conferenceId});
 
 		if(conference)
 		{
-			var conf = Conferences.update(
-				Conferences.findOne({_id:conference._id}),
-				{
-					$addToSet: 
+			for(var i = 0; i < attributes.quantity; i++)
+			{
+				var conf = Conferences.update(
+					Conferences.findOne({_id:conference._id}),
 					{
-						times: 
+						$addToSet: 
 						{
-							_id: new Meteor.Collection.ObjectID()._str,
-							date: attributes.date;
-							timeStart: attributes.timeStart;
-							session: null
+							times: 
+							{
+								_id: new Meteor.Collection.ObjectID()._str,
+								date: attributes.date,
+								time: attributes.time,
+								session: null
+							}
 						}
 					}
-				}
-			);
+				);
+			}
+
 			
 			return conference._id;
 		}
@@ -103,10 +107,10 @@ Meteor.methods({
 						sessions: 
 						{
 							_id: new Meteor.Collection.ObjectID()._str,
-							title: attributes.title;
-							details: attributes.details;
-							category: attributes.category;
-							speaker: attributes.speaker;
+							title: attributes.title,
+							details: attributes.details,
+							category: attributes.category,
+							speaker: attributes.speaker
 						}
 					}
 				}
