@@ -26,5 +26,18 @@ Meteor.methods({
 		{
 			return 'asdf';
 		}
+	},
+	assignTime: function(timeId, sessionId)
+	{
+		var time = Times.update(Times.findOne(
+			{
+				_id: timeId
+			}), 
+			{session: sessionId}
+		);
+
+		Sessions.update(Sessions.findOne({_id: sessionId}), {assigned: true});
+		return;
+
 	}
 });

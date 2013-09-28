@@ -56,6 +56,7 @@ Meteor.Router.add({
 		}
 
 	},
+
 	'/:_id/time/':
 	{
 		as: 'addTime',
@@ -63,6 +64,17 @@ Meteor.Router.add({
 		{
 			Session.set('conferenceId', id);
 			return 'addTime';
+		}
+
+	},
+	'/:_id/assign/:tId':
+	{
+		as: 'assignTime',
+		to: function(id, tId)
+		{
+			Session.set('conferenceId', id);
+			Session.set('timeId', tId);
+			return 'assignTime';
 		}
 
 	},
