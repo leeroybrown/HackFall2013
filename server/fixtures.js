@@ -33,12 +33,6 @@ if(Conferences.find().count() ==0)
 	Times.insert({	
 		conferenceId: conference,
 		date: '11/04/2013',
-		time: '8',
-		session: null
-	});
-	Times.insert({	
-		conferenceId: conference,
-		date: '11/04/2013',
 		time: '9',
 		session: null
 	});
@@ -88,6 +82,168 @@ if(Conferences.find().count() ==0)
 		conferenceId: conference,
 		date: '11/04/2013',
 		time: '11',
+		session: null
+	});
+	Times.insert({	
+		conferenceId: conference,
+		date: '11/04/2013',
+		time: '11',
+		session: null
+	});
+	Times.insert({	
+		conferenceId: conference,
+		date: '11/04/2013',
+		time: '11',
+		session: null
+	});
+	Times.insert({	
+		conferenceId: conference,
+		date: '11/04/2013',
+		time: '11',
+		session: null
+	});
+	Times.insert({	
+		conferenceId: conference,
+		date: '11/04/2013',
+		time: '12',
+		session: null
+	});
+	Times.insert({	
+		conferenceId: conference,
+		date: '11/04/2013',
+		time: '12',
+		session: null
+	});
+	Times.insert({	
+		conferenceId: conference,
+		date: '11/04/2013',
+		time: '12',
+		session: null
+	});
+	Times.insert({	
+		conferenceId: conference,
+		date: '11/04/2013',
+		time: '12',
+		session: null
+	});
+	Times.insert({	
+		conferenceId: conference,
+		date: '11/04/2013',
+		time: '1',
+		session: null
+	});
+	Times.insert({	
+		conferenceId: conference,
+		date: '11/04/2013',
+		time: '1',
+		session: null
+	});
+	Times.insert({	
+		conferenceId: conference,
+		date: '11/04/2013',
+		time: '1',
+		session: null
+	});
+	Times.insert({	
+		conferenceId: conference,
+		date: '11/04/2013',
+		time: '1',
+		session: null
+	});
+	Times.insert({	
+		conferenceId: conference,
+		date: '11/04/2013',
+		time: '2',
+		session: null
+	});
+	Times.insert({	
+		conferenceId: conference,
+		date: '11/04/2013',
+		time: '2',
+		session: null
+	});
+	Times.insert({	
+		conferenceId: conference,
+		date: '11/04/2013',
+		time: '2',
+		session: null
+	});
+	Times.insert({	
+		conferenceId: conference,
+		date: '11/04/2013',
+		time: '2',
+		session: null
+	});
+	Times.insert({	
+		conferenceId: conference,
+		date: '11/04/2013',
+		time: '3',
+		session: null
+	});
+	Times.insert({	
+		conferenceId: conference,
+		date: '11/04/2013',
+		time: '3',
+		session: null
+	});
+	Times.insert({	
+		conferenceId: conference,
+		date: '11/04/2013',
+		time: '3',
+		session: null
+	});
+	Times.insert({	
+		conferenceId: conference,
+		date: '11/04/2013',
+		time: '3',
+		session: null
+	});
+	Times.insert({	
+		conferenceId: conference,
+		date: '11/04/2013',
+		time: '4',
+		session: null
+	});
+	Times.insert({	
+		conferenceId: conference,
+		date: '11/04/2013',
+		time: '4',
+		session: null
+	});
+	Times.insert({	
+		conferenceId: conference,
+		date: '11/04/2013',
+		time: '4',
+		session: null
+	});
+	Times.insert({	
+		conferenceId: conference,
+		date: '11/04/2013',
+		time: '4',
+		session: null
+	});
+	Times.insert({	
+		conferenceId: conference,
+		date: '11/04/2013',
+		time: '5',
+		session: null
+	});
+	Times.insert({	
+		conferenceId: conference,
+		date: '11/04/2013',
+		time: '5',
+		session: null
+	});
+	Times.insert({	
+		conferenceId: conference,
+		date: '11/04/2013',
+		time: '5',
+		session: null
+	});
+	Times.insert({	
+		conferenceId: conference,
+		date: '11/04/2013',
+		time: '5',
 		session: null
 	});
 
