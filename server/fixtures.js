@@ -1,9 +1,7 @@
 if(Conferences.find().count() ==0)
 {
-	var speakerId=['James Chambers','Devon Rathie-Wright','Simon Timms','Eden Rohatensky','Amir Barylko'];
-	var categories=["Web", "ios", "Design", "Agile", "Source Control"];
-	
-	var categoryId = new Array();
+	var speaker_names=['James Chambers','Devon Rathie-Wright','Simon Timms','Eden Rohatensky','Amir Barylko'];
+	var categories=["Web", "ios", "Design", "Agile", "Source Control"];	
 	
 	var conference = Conferences.insert(
 	{
@@ -361,7 +359,7 @@ if(Conferences.find().count() ==0)
 		conferenceId: conference,
 		assigned: false,
 		title: "Agile Teams Roles and Responsibilities",
-		speaker: speakerId[4],
+		speaker: speakerId4,
 		details: "Agile Teams Roles and Responsibilities Starting towards using an agile process more often than not implies change. We discussed process changes, methodology changes, tools and best practices. What about the team? What are the differences between working with a classic software development team and an agile one? Are the roles we know like PM, Analyst, Architect, Developer, etc the same? Join me for a session where we will define each role and responsibility in an agile team and compare it to a classic one and discuss together how to organize it and achieve the best results. Don't miss this opportunity, bring your team to the session so we can have real life feedback!",
 		category: categoryId1
 	});
@@ -393,7 +391,7 @@ if(Conferences.find().count() ==0)
 		conferenceId: conference,
 		assigned: false,
 		title: "Building Cross-Platform Phone Apps & Sites with jQuery Mobile",
-		speaker: speakerId[4],
+		speaker: speakerId4,
 		details: "Native mobile apps have taken all the spotlight in recent years thanks to the introduction of hundreds of thousands of apps in various app stores from Apple, Google, Microsoft and BlackBerry. Apps offer a great native platform experience, but they can be expensive to build and require specific languages, SDKs and skill sets across multiple platforms. Mobile web sites offer a great way to engage with consumers and corporate workers alike without requiring the installation of any app. This session explores the benefits of web development for smartphones using the most popular HTML5 & JavaScript framework for mobile: jQuery Mobile (JQM). We’ll go over a quick primer on HTML5, CSS and JavaScript, followed by everything you need to get started with JQM. We’ll cover the most common development environment options, how to build your first jQuery Mobile page, and how to debug your mobile web code with some of the available tools. We’ll also discuss how to develop a native-like experience on each mobile platform thanks to JQM’s adaptive rendering, and how you wrap a JQM project as a deployable application using PhoneGap. Web development is a critical skill required by every mobile developer; come learn how to get started and reach hundreds of millions of users through a smart mobile web approach.",
 		category: categoryId1
 	});
@@ -401,7 +399,7 @@ if(Conferences.find().count() ==0)
 		conferenceId: conference,
 		assigned: false,
 		title: "Cross Platform Mobile Development in C# with Xamarin",
-		speaker: speakerId[4],
+		speaker: speakerId4,
 		details: "Come learn how to create native cross-platform mobile applications in C# using Xamarin.Android and Xamarin.iOS. Xamarin's platform allows for significant code sharing amongst the three major mobile platforms. In this session we're going to take a quick look at Xamarin Mobile Platform and then dig into some cross platform mobile applications to see how code can be shared between iOS and Android. We'll also touch on some architectural tips and design considerations to create mobile applications.",
 		category: categoryId1
 	});
@@ -433,7 +431,7 @@ if(Conferences.find().count() ==0)
 		conferenceId: conference,
 		assigned: false,
 		title: "How to SOLIDify your code with Unit Tests and Mocking",
-		speaker: speakerId[4],
+		speaker: speakerId4,
 		details: "In this session we will explore the advantages of mocking with libraries like RhinoMocks in order to deliver SOLID code. Sample application be analyzed and unit test will be created to ensure maximum code coverage. Where required, code will be modified to make it more testable, mockable and in-line with SOLID programming principles.",
 		category: categoryId1
 	});
@@ -457,7 +455,7 @@ if(Conferences.find().count() ==0)
 		conferenceId: conference,
 		assigned: false,
 		title: "HTML5: The Parts You Care About",
-		speaker: speakerId[4],
+		speaker: speakerId4,
 		details: "HTML5 is here to stay, but how to you keep know what information is important and what is nothing more than the buzz. The goal of this presentation is to give you the knowledge and tools to you need to understand how HTML5 can be applied to your software development world. We will discuss and view the current state of HTML5, review some of the common assumptions going on about HTML5, and how to start getting you and your developers off to a good start with HTML5.",
 		category: categoryId1
 	});
