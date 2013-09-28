@@ -1,9 +1,10 @@
 <template name="block">
 	<div class="col-md-4 block" id="{{_id}}">
 		{{#if session}}
+		sdaf
 			{{name}}
 		{{else}}
-			Click to Assign Session
+			<a href="#" class="assign" id="{{_id}}">Assign Session</a>
 		{{/if}}
 	</div>
 </template>
