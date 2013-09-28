@@ -18,7 +18,8 @@ Meteor.methods({
 			{
 				categories: [],
 				speakers: [],
-				sessions: []
+				sessions: [],
+				times: []
 			});
 
 			var conferenceId = Conferences.insert(newConference);
@@ -60,11 +61,90 @@ Meteor.methods({
 	},
 	addTimeBlockToConference: function(attributes)
 	{
+		var conference = Conferences.findOne({_id: attributes.conferenceId});
 
+		if(conference)
+		{
+			var conf = Conferences.update(
+				Conferences.findOne({_id:conference._id}),
+				{
+					$addToSet: 
+					{
+						times: 
+						{
+							_id: new Meteor.Collection.ObjectID()._str,
+							date: attributes.date;
+							timeStart: attributes.timeStart;
+							session: null
+						}
+					}
+				}
+			);
+			
+			return conference._id;
+		}
+		else
+		{
+			return 'asdf';
+		}
+	},
+
+	addSessionToConference: function(attributes)
+	{
+		var conference = Conferences.findOne({_id: attributes.conferenceId});
+
+		if(conference)
+		{
+			var conf = Conferences.update(
+				Conferences.findOne({_id:conference._id}),
+				{
+					$addToSet: 
+					{
+						sessions: 
+						{
+							_id: new Meteor.Collection.ObjectID()._str,
+							title: attributes.title;
+							details: attributes.details;
+							category: attributes.category;
+							speaker: attributes.speaker;
+						}
+					}
+				}
+			);
+			
+			return conference._id;
+		}
+		else
+		{
+			return 'asdf';
+		}
 	},
 	
 	addCategoryToConference: function(attributes)
 	{
+		var conference = Conferences.findOne({_id: attributes.conferenceId});
 
+		if(conference)
+		{
+			var conf = Conferences.update(
+				Conferences.findOne({_id:conference._id}),
+				{
+					$addToSet: 
+					{
+						categories: 
+						{
+							_id: new Meteor.Collection.ObjectID()._str,
+							name: attributes.name,
+						}
+					}
+				}
+			);
+			
+			return conference._id;
+		}
+		else
+		{
+			return 'asdf';
+		}
 	}
 });
